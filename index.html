@@ -1,173 +1,217 @@
-DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="no">
 
-    <head>
+<head>
 
-        <meta charset="UTF-8">
+    <meta charset="UTF-8"><!--velgerspråket alfabetet vi skal bruke for nettsiden-->
 
-        <title>Nettavis</title>
+    <title> oppgave1.html</title><!--vi navngir siden gjennom <title></title>-->
 
-        <style>
+ </head>
+    <style>
+        table{
+            
+            border-collapse: collapse;
 
-            body{
+}
 
-                background-color: lightgray;
+body{
+    background-color: black;
+}
 
-            }
+table.striped>tbody>tr:nth-child(odd){
+background-color: #f2f2f2;
 
-            .nyheter {
+}
 
-                display: grid;
+tbody tr{
 
-                grid-template-columns: repeat(10, 1fr);
+background-color: white;
 
-                max-width: 80rem;
+}
 
-                grid-auto-rows: minmax(12rem, 12rem);
 
-                gap: 1rem;
+th{
 
-            }
+text-align: left;
 
-            .nyheter a {
+padding: 12px 15px;
 
-                background-color: #eee;
+border: 2px solid transparent;
 
-                display: flex;
+border-bottom: 4px;
 
-                align-items: flex-end;
+width: 200px;
 
-                padding-left: 1rem;
 
-                padding-bottom: 1rem;
 
-                position: relative;
+}
 
-                font-family: sans-serif;
+td{
 
-            }
+padding: 12px 15px;
 
-   
+border: 2px solid transparent;
 
-            .nyheter h1 {
+text-align: left;
 
- 
+width: 200px;
 
-                position: absolute;
+}
 
-                margin: 0;
+.blå{
+    color: black;
+}
 
-                color: white;
+table:hover{
+    cursor: pointer;
+}
 
-                background: rgba(128, 128, 128, 0.562);
-
-            }
-
-            .nyheter img {
-
-                position: absolute;
-
-                left: 0;
-
-                top: 0;
-
-                width: 100%;
-
-                height: 100%;
-
-                object-fit: cover;
-
-                object-position: center;
-
-            }
-
-            .tre-kolonner { grid-column: span 5; }
-
-            .fire-kolonner { grid-column: span 5; }
-
-            .seks-kolonner { grid-column: span 5; }
-
-            .to-rader { grid-row: span 2;}
-
-            .neg{ grid-row: span 2;}
-
-        </style>
-
-    </head>
-
+#år{
+        text-align: center;
+        background-color: #e74c3c;
+        color: white;
+    }
+    #sum{
+        text-align: center;
+        background-color: #3498db;
+        color: white;
+    }
+    </style>
 <body>
 
-    <section class="nyheter">
+    <table class="striped">
 
-        <a href="https://www.nrk.no/urix/full-beredskap-i-washington-for-demonstrasjon-1.15657000" target="_blank" class="seks-kolonner to-rader">
+        <thead>
 
-            <img src="bilder 3/rasisme.png">
+            <tr>
 
-            <h1>Demonstrasjoner i Washington</h1>
+                <th id="år" colspan="2">År</th>
 
-        </a>
+            </tr>
 
-        <a href="https://www.lokalfotballen.blog/2021/08/04/bildeserie-skedsmo-sorumsand/evensen-header-rett-i-klypene-pa-keeper/" target="_blank" class="tre-kolonner">
+        </thead>
 
-            <img src="bilder 3/fotball.png">
+        <tbody>
 
-            <h1>Rett i klypene på keeper</h1>
+            <tr>
 
-        </a>
+                <td><b>Måned</b></td>
 
-        <a href="https://www.dnt.no/aktiviteter-covid-19/" target="_blank" class="tre-kolonner">
-
-            <img src="bilder3/reise.jpeg" style="object-position: bottom;">
-
-            <h1>Bruk munnbind på tur</h1>
-
-        </a>
+                <td><b>Tjent</b></td>
+            
+            </tr>
 
  
 
-        </a>
+            <tr>
 
-        <a  href="https://strøm.no/vindmøller-slik-lager-de-strøm" target="_blank" class="tre-kolonner">
+                <td>januar</td>
 
-            <img src="bilder 3/vindmølle.png" style="object-position: bottom;">
+                <td>12 500 kr</td>
 
-            <h1>Spar penger med din egen vindmølle</h1>
+            </tr>
 
-        </a>
+            <tr>
 
-        <a href="https://www.dagsavisen.no/kultur/film/2014/07/18/se-opp-for-hai-na-flyr-de-igjen/" target="_blank" class="tre-kolonner to-rader" >
+                <td>februar</td>
 
-            <img src="bilder 3/hai.png">
+                <td>17 800 kr</td>
 
-            <h1>Se opp for hai</h1>
+            </tr>
 
-        <a href="https://www.matprat.no/oppskrifter/kos/hvalbiff-med-soppstuing/" target="_blank" class="fire-kolonner">
+            <tr>
 
-            <img src="bilder 3/blåhval.png" style="object-position: bottom;">
+                <td>mars</td>
 
-            <h1>Med hvalbiff på menyen</h1>
+                <td>28 300 kr</td>
 
-        </a>
+            </tr>
 
-        <a href="https://www.matprat.no/oppskrifter/kos/hjemmelaget-pasta/" target="_blank" class="fire-kolonner neg">
+            <tr>
 
-            <img src="pasta" style="object-position: bottom;">
+                <td>april</td>
 
-            <h1>Så lett er det å lage pastadeig!</h1>
+                <td>15 750 kr</td>
 
-        </a>
+            </tr>
 
-        <a href="https://nhi.no/trening/aktivitet-og-helse/ulike-typer-trening/yoga-noe-for-deg/" target="_blank" class="fire-kolonner neg">
+            <tr>
 
-            <img src="bilder 3/yoga.png">
+                <td>mai</td>
 
-            <h1>Kom i form i din egen stue</h1>
+                <td>14 900 kr</td>
 
-        </a>
+            </tr>
 
-    </section>
+            <tr>
 
+                <td>juni</td>
+
+                <td>11 200 kr</td>
+
+            </tr>
+
+            <tr>
+
+                <td>juli</td>
+
+                <td>16 400 kr</td>
+
+            </tr>
+
+            <tr>
+
+                <td>august</td>
+
+                <td>10 200 kr</td>
+
+            </tr>
+
+            <tr>
+
+                <td>september</td>
+
+                <td>14 200 kr</td>
+
+            </tr>
+
+            <tr>
+
+                <td>oktober</td>
+
+                <td>16 200 kr</td>
+
+            </tr>
+
+            <tr>
+
+                <td>november</td>
+
+                <td>10 900 kr</td>
+
+            </tr>
+
+            <tr>
+
+                <td>desember</td>
+
+                <td>11 200 kr</td>
+
+            </tr>
+
+            <tr id="sum">
+
+                <td>Totalt</td>
+
+                <td>179 550 kr</td>
+
+            </tr>
+
+            
+        </tbody>
+
+    </table>
 </body>
 
-</html>
